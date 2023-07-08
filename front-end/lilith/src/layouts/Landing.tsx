@@ -12,7 +12,7 @@ export const Landing = () => {
             }else {
                 setCurrentPhoto(currentPhoto+1)
                     }                 
-            },5000)
+            },4000)
             return ()=> clearTimeout(timer)
     },[currentPhoto])
     

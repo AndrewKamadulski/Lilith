@@ -1,5 +1,6 @@
 import "./App.css";
-import { Landing } from "./layouts/homepage/Landing";
+import { Homepage } from "./layouts/Homepage";
+import { Landing } from "./layouts/Landing";
 
 function App() {
   return (

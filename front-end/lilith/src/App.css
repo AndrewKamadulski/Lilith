@@ -11,6 +11,17 @@
   padding-right: 1rem;
 }
 
+.homepage-hero {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+  background-image: linear-gradient( rgba(51, 78, 131, 0.7), rgba(165, 199, 244, 0.7) );
+  opacity: var(--mainOpacity);
+  height: 25em !important;
+  color: white; 
+
+}
+
 
 
 
