@@ -28,9 +28,9 @@ export const Landing = () => {
     }
     
     return (      <>                    
-                    <div className="home" style={bgImageStyle}>
+                    <div style={bgImageStyle}>
                         <div className='container'>                            
-                                <h1 className='display-1 mt-2 align-item-center justify-content-center text-light'>Lilith Photography</h1>                                                          
+                                <h1 className='display-1 mt-2 align-item-center justify-content-center text-light cursive'>Lilith Photography</h1>                                                          
                         </div> 
                         <div className='me-5'>                        
                         <button type="button" className='mb-5 position-absolute bottom-0 btn btn-outline-light'>Enter</button>    

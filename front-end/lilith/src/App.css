@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.cursive {
+  font-family: 'Caveat', cursive;
+}
+
+.banner-text{
+  font-size:7em;
+  padding-right: 1rem;
+}
 
 
 
