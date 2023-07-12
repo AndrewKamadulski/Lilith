@@ -5,22 +5,31 @@ import ModalBody from "react-bootstrap/ModalBody";
 import ModalHeader from "react-bootstrap/ModalHeader";
 import ModalFooter from "react-bootstrap/ModalFooter";
 import ModalTitle from "react-bootstrap/ModalTitle";
+import { validateEmail } from "../../../utils/validateEmail";
 
-export const Homepage = () => {
+export const Hero = () => {
+
     const [isOpen, setIsOpen] = useState(false);
     const [userEmail, setUserEmail] = useState("");
-  const showModal = () => {
-    setIsOpen(true);
-  };
+    const [isUserSignedUp, setIsUserSignedUp] = useState(false);
 
-  const hideModal = () => {
-    setIsOpen(false);
-  };
 
-  const handleEmailSignUp = () => {
-    hideModal();
-    console.log(userEmail);
-  };
+    const showModal = () => {
+      setIsOpen(true);
+    };
+
+    const hideModal = () => {
+      setIsOpen(false);
+    };
+
+    const handleEmailSignUp = () => {
+      if(validateEmail(userEmail)) {
+        console.log("email sent");
+        hideModal();
+      } else {
+        console.log("invalid email");
+      }
+    };
 
 
     return(
@@ -52,3 +61,4 @@ export const Homepage = () => {
         </div>
     );
 }
+
