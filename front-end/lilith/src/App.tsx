@@ -5,7 +5,7 @@ import { Landing } from "./layouts/Landing";
 function App() {
   return (
     <div className="App">
-      <Landing />
+      <Homepage />
     </div>
   );
 }

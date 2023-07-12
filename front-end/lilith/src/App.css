@@ -15,11 +15,9 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;  
-  background-image: linear-gradient( rgba(51, 78, 131, 0.7), rgba(165, 199, 244, 0.7) );
+  background-image: linear-gradient( rgba(234, 238, 246, 0.7), rgba(252, 252, 253, 0.7));
   opacity: var(--mainOpacity);
   height: 25em !important;
-  color: white; 
-
 }
 
 
