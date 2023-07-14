@@ -50,6 +50,23 @@
     filter: opacity(.8);
    }
 
+   .connect {
+    font-size: 5em;      
+}
+
+.contact-label {
+ font-size: 1.5rem;
+}
+
+.contact-icon {
+  height: 50px;
+  width: 50px;  
+}
+
+
+
+   
+
 
 
 
