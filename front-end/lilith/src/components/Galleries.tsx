@@ -68,28 +68,26 @@ export const Galleries = () => {
         return(
             <>           
             <div className="display-2 cursive mb-3">Galleries</div>
-            <div className='gallery'>                
-                <div className="d-none d-lg-block">    
+            <div className='gallery'>              
+                <div className="d-none d-lg-block">               
                 
-                {galleryList.map((gallery)=>{            
-                const bgImageStyle = {
-                    backgroundImage: `url('http://www.lilithphotography.com/Gallery/${gallery}/1')`,
-                    display: 'inline-block',
-                    backgroundSize: 'cover', 
-                    backgroundPosition: 'center',               
-                    backgroundRepeat: 'no-repeat',                               
-                    BreakInside: 'avoid-column',                    
-                    color: 'white',
-                    margin: "5px",
-                    fontWeight: "lighter",  
-                    fontSize: "30px",                  
-                    padding: "0 5px",                                             
-                }
+                {galleryList.map((gallery)=>{           
+                    const bgImageStyle = {
+                        backgroundImage: `url('http://www.lilithphotography.com/Gallery/${gallery}/1')`,
+                        display: 'inline-block',
+                        backgroundSize: 'cover', 
+                        backgroundPosition: 'center',               
+                        backgroundRepeat: 'no-repeat',                               
+                        BreakInside: 'avoid-column',
+                        color: 'white',
+                        margin: "5px",
+                        padding: "0 5px",                                             
+                    }
                 
                 
                 return (                               
                     <a className="cursive" href="/">
-                    <div className="gallery gallery-pics" style={Object.assign(bgImageStyle,bgSize)}  key={gallery} > 
+                    <div className="gallery gallery-pics" style={Object.assign(bgImageStyle,bgSize)} key={gallery} > 
                         <p>{gallery}</p> 
                     </div>
                     </a>            

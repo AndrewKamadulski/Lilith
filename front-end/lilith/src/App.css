@@ -1,12 +1,15 @@
 .App {
-  text-align: center;
+  text-align: center; 
+  background-color: #f4f6f7;
 }
+
+
 
 .cursive {
   font-family: 'Caveat', cursive;
 }
 
-.banner-text{
+.banner-text {
   font-size:7em;
   padding-right: 1rem;
 }
@@ -63,7 +66,27 @@
   width: 50px;  
 }
 
+.about-container {
+  width: 90%;  
+  padding: 2%;       
+  margin:  1em 0 0 2em; 
+  display: flex;    
+  flex-wrap: wrap;    
+}
 
+.about-section-image {
+  max-width: 100%;
+  max-height: 90%;
+  padding-top: 2.25em;
+}
+.about-emphasis {
+  font-size: 2em;    
+}
+
+.about-section-banner {
+  font-size: 2em; 
+  margin-top:40px;            
+}
 
    
 
