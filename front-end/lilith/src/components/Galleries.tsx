@@ -68,7 +68,8 @@ export const Galleries = () => {
      } else {   
         return(
             <>
-            <div className='gallery'>
+            <h2 className="cursive display-1 mb-5">Galleries</h2>
+            <div className='gallery'>                
                 <div className="d-none d-lg-block">    
             
                 {galleryList.map((gallery)=>{            
@@ -92,7 +93,7 @@ export const Galleries = () => {
                     <div className="gallery gallery-pics" style={Object.assign(bgImageStyle,bgSize)}  key={gallery} > 
                         <p>{gallery}</p> 
                     </div>
-                    </a>              
+                    </a>            
                                 
                     )
                  })}

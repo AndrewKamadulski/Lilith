@@ -6,6 +6,7 @@ import { validateEmail } from "../utils/validateEmail";
 export const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [userEmail, setUserEmail] = useState("");
+  const [userName, setUserName] = useState("");
   const [isUserSignedUp, setIsUserSignedUp] = useState(false);
 
   const showModal = () => {
@@ -29,8 +30,9 @@ export const Hero = () => {
     <div className="mt-5 w-100 homepage-hero" style={{ height: 550 }}>
       <div>
         <div className="display-3">
-          Join our mailing list for special offers!
+          Subscribe!
         </div>
+        <p>Sign up to hear from us about specials, sales, and events.</p>
         <div className="mt-3">
         <button
           type="button"
@@ -48,11 +50,30 @@ export const Hero = () => {
             <Modal.Title>Email Sign Up</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <div>
+              <div>
+           <label className="py-2" htmlFor="emailListSignupName">Name</label>
+              </div>
             <input
+              id="emailListSignupName"
+              placeholder="name"
               style={{ width: 300 }}
-              placeholder="Please enter your email address"
-              onChange={(e) => setUserEmail(e.target.value)}
-            ></input>
+              onChange={(e) => setUserName(e.target.value)}
+            >              
+            </input>
+            </div>
+            <div>
+            <div>
+            <label className="py-2" htmlFor="emailListSignup">Email</label>
+            </div>
+            <input
+              id="emailListSignup"
+              placeholder="user@email.com"
+              style={{ width: 300 }}
+              onChange={(e) => setUserName(e.target.value)}
+            >              
+            </input>
+            </div>
           </Modal.Body>
           <Modal.Footer>
             <button onClick={hideModal}>Close</button>
