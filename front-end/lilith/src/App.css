@@ -20,6 +20,10 @@
   height: 25em !important;
 }
 
+.hero-text {
+  font-size: 2rem;
+}
+
 .gallery {    
     -webkit-column-count:3;
     -moz-column-count: 3;

@@ -52,7 +52,6 @@ export const Galleries = () => {
      if(currentGallery) { 
        return(
             <>   
-            
             <div>{currentGallery}</div>             
             <div className="gallery">      
             {galleryPhotoArray.map((image, index)=>{
@@ -67,11 +66,11 @@ export const Galleries = () => {
         );   
      } else {   
         return(
-            <>
-            <h2 className="cursive display-1 mb-5">Galleries</h2>
+            <>           
+            <div className="display-2 cursive mb-3">Galleries</div>
             <div className='gallery'>                
                 <div className="d-none d-lg-block">    
-            
+                
                 {galleryList.map((gallery)=>{            
                 const bgImageStyle = {
                     backgroundImage: `url('http://www.lilithphotography.com/Gallery/${gallery}/1')`,
@@ -101,9 +100,7 @@ export const Galleries = () => {
             </div> 
             <div className="d-lg-none">
             <a href="http://www.lilithphotography.com/Gallery">
-                    <div className="gallery gallery-pics" style={{backgroundImage: 'url("http://www.lilithphotography.com/Gallery/PurpleClover/1")', height:500, backgroundPosition:"center"}}> 
-                        <p>Galleries</p> 
-                    </div>
+                    <div className="gallery gallery-pics" style={{backgroundImage: 'url("http://www.lilithphotography.com/Gallery/PurpleClover/1")', height:500, backgroundPosition:"center"}}>                    </div>
                 </a>  
             </div>      
             </>

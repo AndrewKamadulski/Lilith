@@ -29,14 +29,14 @@ export const Hero = () => {
   return (
     <div className="mt-5 w-100 homepage-hero" style={{ height: 550 }}>
       <div>
-        <div className="display-3">
+        <div className="display-2">
           Subscribe!
         </div>
-        <p>Sign up to hear from us about specials, sales, and events.</p>
+        <p className="mt-2 hero-text">Sign up to hear about specials, sales, and events.</p>
         <div className="mt-3">
         <button
           type="button"
-          className="mt-5 btn btn-lg btn-outline-dark"
+          className="mt-3 btn btn-lg btn-outline-dark"
           onClick={showModal}
         >
           Sign Up
@@ -46,9 +46,6 @@ export const Hero = () => {
 
       <>
         <Modal show={isOpen} onHide={hideModal}>
-          <Modal.Header>
-            <Modal.Title>Email Sign Up</Modal.Title>
-          </Modal.Header>
           <Modal.Body>
             <div>
               <div>
