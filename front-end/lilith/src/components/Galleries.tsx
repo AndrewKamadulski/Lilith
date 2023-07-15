@@ -67,7 +67,7 @@ export const Galleries = () => {
      } else {   
         return(
             <>           
-            <div className="display-2 cursive mb-3">Galleries</div>
+            <div className="display-2 mb-3">Galleries</div>
             <div className='gallery'>              
                 <div className="d-none d-lg-block">               
                 

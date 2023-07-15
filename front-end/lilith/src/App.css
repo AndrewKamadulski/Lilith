@@ -18,7 +18,7 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;  
-  background-image: linear-gradient( rgba(234, 238, 246, 0.7), rgba(252, 252, 253, 0.7));
+  background-image: linear-gradient( rgba(213, 223, 223, 0.7), rgba(222, 237, 237, 0.7));
   opacity: var(--mainOpacity);
   height: 25em !important;
 }

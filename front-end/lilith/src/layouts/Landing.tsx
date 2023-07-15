@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 export const Landing = () => {
@@ -29,12 +30,15 @@ export const Landing = () => {
     
     return (      <>                    
                     <div style={bgImageStyle}>
-                        <div className='container'>                            
-                                <h1 className='display-1 mt-2 align-item-center justify-content-center text-light cursive'>Lilith Photography</h1>                                                          
+                        <div className='container d-flex align-item-center justify-content-center'>                            
+                        <h1 className='display-1 mt-2 text-light cursive'>Lilith Photography</h1>                                                                                                    
                         </div> 
-                        <div className='me-5'>                        
-                        <button type="button" className='mb-5 position-absolute bottom-0 btn btn-outline-light'>Enter</button>    
-                        </div>         
+                        <div className='d-flex justify-content-center align-items-center'>
+                        <div>                        
+                        <Link to={"/Home"} className='mb-5 btn position-absolute bottom-0 btn-outline-light'>Enter</Link>    
+                        </div>
+                        </div>     
+                               
                     </div>
                 </>
     )
