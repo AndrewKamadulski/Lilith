@@ -5,13 +5,13 @@ import { Landing } from "./layouts/Landing";
 import { About } from "./layouts/About";
 import { GalleriesPage } from './layouts/Galleries';
 import { Contact } from './layouts/Contact';
-import { Navbar2 } from './components/Navbar2';
+import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 function App() {
   return (
     <>    
     <Router> 
-    <Navbar2 />    
+    <Navbar />    
     <Routes>
              <Route
               path="/"

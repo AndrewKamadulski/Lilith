@@ -4,9 +4,9 @@ import { Navbar } from "../components/Navbar";
 export const About = () => {
   return (
     <>
-      <div className="about-container p-2">
+      <div className="about-container p-4">
         <div className="col-12 col-lg-6 d-flex m-1">
-          <p className="fs-4 m-1 p-4">
+          <p className="fs-4 m-1 p-4 text-center">
             <span className="fs-1">Hi!</span> <br></br> I am{" "}
             <span className="fs-1">Shelly Kamadulski</span>, owner of Lilith
             Photography <br></br>
@@ -22,7 +22,7 @@ export const About = () => {
             your family.
           </p>
         </div>
-        <div className="col-12 col-lg-5 d-flex m-1 align-items-center justify-content-center">
+        <div className="col-12 col-lg-5 d-flex align-items-center justify-content-end">
           <img
             className="about-section-image"
             src="http://www.lilithphotography.com/photos/about/ShellySunflower"
@@ -42,7 +42,7 @@ export const About = () => {
         </div>
 
         <div className="col-12 col-lg-6 d-flex">
-          <p className="fs-4 p-4">
+          <p className="fs-4 p-4 text-center">
             <span className="about-section-banner">I want to be there!</span>
             <br></br>&emsp;My heart is in photographing relationships. The
             relationship between a mother and child, the love of a husband and

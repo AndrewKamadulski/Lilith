@@ -40,6 +40,7 @@
     padding: 0px;
     
   }
+ 
 
   .gallery p{
     font-size: 2em;
@@ -59,12 +60,15 @@
    .connect {
     font-size: 5em;      
 }
-
+.contact-container {
+  background-image: url(./images/8.jpg);
+}
 
 .contact-form {
   height: 80vh;  
-  background-color: #cfcdcd;
+  background-color: #e7e7e7; 
 }
+
 
 .contact-label {
  font-size: 1.5rem;

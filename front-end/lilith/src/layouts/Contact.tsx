@@ -5,7 +5,7 @@ import { SocialMedia } from "../components/SocialMedia";
 
 export const Contact = () => {
     return(
-        <div>                  
+        <div className="contact-container">                  
             <ContactForm />       
         </div> 
 
