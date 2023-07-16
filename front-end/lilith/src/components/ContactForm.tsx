@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { postData } from "../utils/PostData";
+import { SocialMedia } from "./SocialMedia";
 
 export const ContactForm = () => {
   const [messageText, setMessageText] = useState("");
@@ -37,7 +38,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container contact-form mt-3">
         <div className="justify-content-center pt-5">
           <form onSubmit={onSubmit}>
             <div className="mb-3 px-5">
@@ -93,22 +94,17 @@ export const ContactForm = () => {
                 {messageText}
               </textarea>
             </div>
+            <div className="d-flex justify-content-center">
             <button
-              className="btn btn-outline-dark mt-5"
+              className="btn btn-outline-dark my-5"
               type="submit"
               onSubmit={onSubmit}
             >
               Send
             </button>
+            </div>
           </form>
-        </div>
-        <div className="col-12 mt-5" id="contact-footer">
-          <a href="https://www.facebook.com/LilithPhotography34/">
-            <img className="contact-icon mx-3" src={require("../icons/Facebook.png")} alt="logo" />
-          </a>
-          <a href="https://www.instagram.com/lilithphotography/?hl=en"><img className="contact-icon mx-3" src={require("../icons/instagram.png")} alt="logo" /></a>
-          <a href="mailto:shellyk@lilithphotography.com"><img className="contact-icon mx-3 " src={require("../icons/email.png")} alt="logo" /></a>
-        </div>
+        </div>      
       </div>
     </>
   );

@@ -101,7 +101,7 @@ export const Galleries = () => {
             </div> 
             <div className="d-lg-none">
             <a href="http://www.lilithphotography.com/Gallery">
-                    <div className="gallery gallery-pics" style={{backgroundImage: 'url("http://www.lilithphotography.com/Gallery/PurpleClover/1")', height:500, backgroundPosition:"center"}}>                    </div>
+                    <div className="gallery gallery-pics m-3" style={{backgroundImage: 'url("http://www.lilithphotography.com/Gallery/PurpleClover/1")', height:500, backgroundPosition:"center"}}>                    </div>
                 </a>  
             </div>      
             </>

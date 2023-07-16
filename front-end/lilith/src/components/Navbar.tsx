@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-color text-color-dark navbar-dark py-3">
-      <div className="container-fluid">
-        <span className="navbar-brand"> Lilith Photography</span>
+    <nav className="navbar navbar-expand-lg main-color text-color-dark navbar-dark py-3">
+      <div className="container-fluid d-flex">
+        <span className="navbar-brand fs-2"> Lilith Photography</span>
         <button
           className="navbar-toggler"
           type="button"
@@ -14,11 +14,11 @@ export const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle Navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon justify-content-end"></span>
         </button>
         <div>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav fs-4">
             <li className="nav-item">
               <NavLink className="nav-link" to="/Home">
                 Home

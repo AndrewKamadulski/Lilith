@@ -2,7 +2,7 @@
   text-align: center;  
 }
 
-.navbar-color {
+.main-color {
   background-color: #aaa9ad;  
   }
 
@@ -27,6 +27,7 @@
 
 .hero-text {
   font-size: 2rem;
+  margin:  0 2em; 
 }
 
 .gallery {    
@@ -57,6 +58,12 @@
 
    .connect {
     font-size: 5em;      
+}
+
+.contact-form {
+  height: 80vh;
+  width: 50vw;
+  background-color: #cfcdcd;
 }
 
 .contact-label {
