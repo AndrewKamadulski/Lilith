@@ -4,13 +4,12 @@ import { Navbar } from "../components/Navbar";
 export const About = () => {
   return (
     <>
-    <Navbar/>
       <div className="about-container p-2">
         <div className="col-12 col-lg-6 d-flex m-1">
           <p className="fs-4 m-1 p-4">
             <span className="fs-1">Hi!</span> <br></br> I am{" "}
-            <span className="fs-1">Shelly Kamadulski</span>, owner of
-            Lilith Photography <br></br>
+            <span className="fs-1">Shelly Kamadulski</span>, owner of Lilith
+            Photography <br></br>
             <br></br>
             &emsp;My love for photography began when my daughter was born in
             1993 because I wanted to preserve every moment of her little life.
@@ -27,14 +26,14 @@ export const About = () => {
           <img
             className="about-section-image"
             src="http://www.lilithphotography.com/photos/about/ShellySunflower"
-            style={{width: 400, height: 400}}
+            style={{ width: 400, height: 400 }}
             alt="Portrait of Shelly"
           />
         </div>
         <div className="col-12">
           <hr></hr>
         </div>
-         <div className="col-12 col-lg-5 d-flex m-3">
+        <div className="col-12 col-lg-5 d-flex m-3">
           <img
             className="about-section-image"
             src="http://www.lilithphotography.com/photos/about/Family"
@@ -51,15 +50,12 @@ export const About = () => {
             happiness while holding your newborn, <b>I want to be there.</b> The
             exhilaration and joy when your baby is experiencing new milestones,{" "}
             <b>I want to be there.</b> As your children grow and explore the
-            world, 
+            world,
             <b> I want to be there</b> to capture those remarkable moments with
             you!
           </p>
         </div>
-       
-    
       </div>
-      <Footer />
     </>
   );
 };

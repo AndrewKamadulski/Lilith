@@ -5,10 +5,8 @@ import { SocialMedia } from "../components/SocialMedia";
 
 export const Contact = () => {
     return(
-        <div>
-            <Navbar />                
-            <ContactForm />            
-            <Footer />
+        <div>                  
+            <ContactForm />       
         </div> 
 
     );

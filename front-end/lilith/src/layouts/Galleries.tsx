@@ -3,8 +3,7 @@ import { Galleries } from "../components/Galleries";
 
 export const GalleriesPage = () => {
     return (
-        <>
-        <Navbar /> 
+        <>      
         <Galleries/> 
         </> 
     );

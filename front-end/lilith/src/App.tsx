@@ -5,9 +5,13 @@ import { Landing } from "./layouts/Landing";
 import { About } from "./layouts/About";
 import { GalleriesPage } from './layouts/Galleries';
 import { Contact } from './layouts/Contact';
+import { Navbar2 } from './components/Navbar2';
+import { Footer } from './components/Footer';
 function App() {
   return (
-    <Router>     
+    <>    
+    <Router> 
+    <Navbar2 />    
     <Routes>
              <Route
               path="/"
@@ -33,9 +37,12 @@ function App() {
               path="*"
                element={<Home />}
             />
+            
 
-  </Routes>            
+  </Routes>  
+  <Footer />          
 </Router>
+</> 
   );
 }
 

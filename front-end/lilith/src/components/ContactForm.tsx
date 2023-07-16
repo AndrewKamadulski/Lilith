@@ -38,7 +38,7 @@ export const ContactForm = () => {
 
   return (
     <>
-      <div className="container contact-form mt-3">
+      <div className="container contact-form mt-3 col-12 col-lg-6">
         <div className="justify-content-center pt-5">
           <form onSubmit={onSubmit}>
             <div className="mb-3 px-5">
@@ -93,16 +93,17 @@ export const ContactForm = () => {
               >
                 {messageText}
               </textarea>
-            </div>
-            <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center">
             <button
-              className="btn btn-outline-dark my-5"
+              className="btn btn-outline-dark mt-4"
               type="submit"
               onSubmit={onSubmit}
             >
               Send
             </button>
             </div>
+            </div>
+            
           </form>
         </div>      
       </div>

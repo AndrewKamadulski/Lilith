@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg main-color text-color-dark navbar-dark py-3">
       <div className="container-fluid d-flex">
-        <span className="navbar-brand fs-2"> Lilith Photography</span>
+        <span className="navbar-brand mx-3 fs-2"> Lilith Photography</span>
         <button
           className="navbar-toggler"
           type="button"
@@ -14,9 +14,9 @@ export const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle Navigation"
         >
-          <span className="navbar-toggler-icon justify-content-end"></span>
-        </button>
-        <div>
+          <span className="navbar-toggler-icon"></span>
+        </button>   
+        <div className="mx-3">
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav fs-4">
             <li className="nav-item">
@@ -38,10 +38,10 @@ export const Navbar = () => {
               <NavLink className="nav-link" to="/Contact">
                 Contact
               </NavLink>
-            </li>
+            </li>            
           </ul>
-        </div>
-      </div>
+          </div>
+        </div>      
       </div>
     </nav>   
   );
