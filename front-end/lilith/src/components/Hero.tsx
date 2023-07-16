@@ -115,7 +115,7 @@ export const Hero = () => {
         <p className="fs-4 mt-5 p-5 text-center">
           <span className="display-2">Art you can enjoy every day!</span>
           <br></br>
-          <hr></hr>I would love the chance to meet your family and make some art
+          <hr className="p-3"></hr>I would love the chance to meet your family and make some art
           together. I look forward to meeting with you and learning how I can
           help you fulfill your vision. Whether you are welcoming a new baby or
           documenting the growth of your child, I know how incredibly important

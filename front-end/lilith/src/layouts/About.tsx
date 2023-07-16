@@ -6,9 +6,8 @@ export const About = () => {
     <>
       <div className="about-container p-4">
         <div className="col-12 col-lg-6 d-flex m-1">
-          <p className="fs-4 m-1 p-4 text-center">
-            <span className="fs-1">Hi!</span> <br></br> I am{" "}
-            <span className="fs-1">Shelly Kamadulski</span>, owner of Lilith
+          <p className="fs-4 m-1 pb-5 text-center">            
+            I am <span className="fs-1">Shelly Kamadulski</span>, owner of Lilith
             Photography <br></br>
             <br></br>
             &emsp;My love for photography began when my daughter was born in
@@ -42,7 +41,7 @@ export const About = () => {
         </div>
 
         <div className="col-12 col-lg-6 d-flex">
-          <p className="fs-4 p-4 text-center">
+          <p className="fs-4 p-4 mt-5 text-center">
             <span className="about-section-banner">I want to be there!</span>
             <br></br>&emsp;My heart is in photographing relationships. The
             relationship between a mother and child, the love of a husband and
