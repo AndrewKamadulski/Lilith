@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-bootstrap/Modal";
 import { validateEmail } from "../utils/validateEmail";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,11 +30,11 @@ export const Hero = () => {
   return (
     <>
  
-    <div className="mt-5 w-100 homepage-hero" style={{ height: 550 }}>
-      <div>
-        <div className="display-2">
+    <div className="w-100 homepage-hero" style={{ height: 550 }}>
+      <div className="d-flex flex-column align-items-center"> 
+        <span className="display-1">
           Subscribe!
-        </div>
+        </span><br></br>
         <p className="mt-2 hero-text">Sign up to hear about specials, sales, and events.</p>
         <div className="mt-3">
         <button
@@ -110,11 +111,11 @@ export const Hero = () => {
     </div>
   </div>
   <div className="col-12 d-flex m-1">
-    <p className="fs-4 mt-5">
-      <span className="about-section-banner">
+    <p className="fs-4 mt-5 p-5">
+      <span className="display-2">
         Art you can enjoy every day!
-      </span>
-      <br></br>&emsp;I would love the chance to meet your family and make
+      </span><br></br><hr></hr>
+      I would love the chance to meet your family and make
       some art together. I look forward to meeting with you and learning
       how I can help you fulfill your vision. Whether you are welcoming a
       new baby or documenting the growth of your child, I know how
@@ -122,8 +123,10 @@ export const Hero = () => {
       fleeting. Your session will be precisely tailored to create
       beautiful images that you'll love now and forever!
       <br></br>
-      <button type="button" className="btn btn-lg btn-outline-dark mt-5">Contact</button>
+      <div className="d-flex justify-content-center">
+      <Link to="/Contact" type="button" className="btn btn-lg btn-outline-dark mt-5">Contact</Link>
       <hr className="mt-5"></hr>
+      </div>
       
     </p>     
     

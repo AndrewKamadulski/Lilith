@@ -67,8 +67,11 @@ export const Galleries = () => {
      } else {   
         return(
             <>           
-            <div className="display-2 mb-3">Galleries</div>
-            <div className='gallery'>              
+            <div className="display-2 mx-5">
+                Galleries
+            <hr></hr>
+            </div>            
+            <div className='gallery m-3'>              
                 <div className="d-none d-lg-block">               
                 
                 {galleryList.map((gallery)=>{           

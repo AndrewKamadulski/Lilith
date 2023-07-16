@@ -1,7 +1,7 @@
 export const About = () => {
   return (
     <>
-      <div className="about-container">
+      <div className="about-container p-2">
         <div className="col-12 col-lg-6 d-flex m-1">
           <p className="fs-4 m-1">
             <span className="fs-1">Hi!</span> <br></br> I am{" "}

@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
-import { ContactForm } from "./components/ContactForm";
-import { Homepage } from "./layouts/Homepage";
+import { Home } from "./layouts/Home";
 import { Landing } from "./layouts/Landing";
 import { About } from "./layouts/About";
+import { GalleriesPage } from './layouts/Galleries';
+import { Contact } from './layouts/Contact';
 function App() {
   return (
     <Router>     
@@ -14,15 +15,23 @@ function App() {
             />
             <Route
               path="/Home"
-               element={<Homepage />}
+               element={<Home />}
             />
              <Route
               path="/About"
                element={<About/>}
-            />            
+            />      
+              <Route
+              path="/Galleries"
+               element={<GalleriesPage/>}
+            />     
+               <Route
+              path="/Contact"
+               element={<Contact/>}
+            />     
              <Route
               path="*"
-               element={<Homepage />}
+               element={<Home />}
             />
 
   </Routes>            
