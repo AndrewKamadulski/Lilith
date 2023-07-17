@@ -1,90 +1,89 @@
 .App {
-  text-align: center;  
+  text-align: center;
 }
 
 .main-color {
-  background-color: #aaa9ad;  
-  }
-
+  background-color: #aaa9ad;
+}
 
 .cursive {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
 }
 
-.banner-text {
-  font-size:7em;
-  padding-right: 1rem;
-}
+
+
 
 .homepage-hero {
   display: flex !important;
   justify-content: center !important;
-  align-items: center !important;  
-  background-image: linear-gradient( rgba(213, 223, 223, 0.7), rgba(222, 237, 237, 0.7));
+  align-items: center !important;
+  background-image: linear-gradient(
+    rgba(213, 223, 223, 0.7),
+    rgba(222, 237, 237, 0.7)
+  );
   opacity: var(--mainOpacity);
   height: 25em !important;
 }
 
 .hero-text {
   font-size: 2rem;
-  margin:  0 2em; 
+  margin: 0 2em;
 }
 
-.gallery {    
-    -webkit-column-count:3;
-    -moz-column-count: 3;
-    -column-count: 3;
-    -webkit-column-width: 33%;
-    -moz-column-width: 33%;
-    -column-width: 33%;
-    padding: 0px;
-    
-  }
- 
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  -column-width: 33%;
+  padding: 0px;
+}
 
-  .gallery p{
-    font-size: 2em;
-  }
-  
-  .gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
-    cursor: pointer;
-    margin-bottom: 12px;    
-   }
+.gallery p {
+  font-size: 2em;
+}
 
-   .gallery .pics:hover {
-    filter: opacity(.8);
-   }
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
 
-   .connect {
-    font-size: 5em;      
+.gallery .pics:hover {
+  filter: opacity(0.8);
+}
+
+
+.connect {
+  font-size: 5em;
 }
 .contact-container {
-  background-image: url(./images/8.jpg);
+  background-image: url(./images/girl-and-horse.jpg);
 }
 
 .contact-form {
-  height: 80vh;  
-  background-color: #e7e7e7; 
+  height: 80vh;
+  background-color: #e7e7e7;
+  opacity: 0.8;
 }
 
-
 .contact-label {
- font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .contact-icon {
   height: 50px;
-  width: 50px;  
+  width: 50px;
 }
 
 .about-container {
-  width: 90%;  
-  padding: 2%;       
-  margin:  1em 0 0 2em; 
-  display: flex;    
-  flex-wrap: wrap;    
+  width: 90%;
+  padding: 2%;
+  margin: 1em 0 0 2em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-section-image {
@@ -93,17 +92,10 @@
   padding-top: 2.25em;
 }
 .about-emphasis {
-  font-size: 2em;    
+  font-size: 2em;
 }
 
 .about-section-banner {
-  font-size: 2em; 
-  margin-top:40px;            
+  font-size: 2em;
+  margin-top: 40px;
 }
-
-   
-
-
-
-
-

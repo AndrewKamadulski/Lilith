@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { postData } from "../utils/PostData";
-import { SocialMedia } from "./SocialMedia";
 
 export const ContactForm = () => {
   const [messageText, setMessageText] = useState("");

@@ -5,9 +5,10 @@ import { Footer } from "../components/Footer";
 import { About } from "./About";
 
 
+
 export const Home = () => {
   return (
-    <div>
+    <div>      
       <Hero />
       <About />
     </div>

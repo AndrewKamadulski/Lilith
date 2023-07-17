@@ -30,9 +30,9 @@ export const Landing = () => {
     
     return (      <>                    
                     <div style={bgImageStyle}>                       
-                        <div className='d-flex justify-content-center align-items-center'>
+                        <div className='d-flex mt-3 justify-content-center align-items-center'>
                         <div>                        
-                        <Link to={"/Home"} className='mb-5  btn position-absolute bottom-0 btn-outline-light'>Enter</Link>    
+                        <Link to={"/Home"} className='mb-5  btn active position-absolute bottom-0 btn-outline-light'>Enter</Link>    
                         </div>
                         </div>     
                                

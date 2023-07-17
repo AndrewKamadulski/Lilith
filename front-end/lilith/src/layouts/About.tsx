@@ -1,5 +1,3 @@
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
 
 export const About = () => {
   return (
@@ -21,7 +19,7 @@ export const About = () => {
             your family.
           </p>
         </div>
-        <div className="col-12 col-lg-5 d-flex align-items-center justify-content-end">
+        <div className="col-12 col-lg-5 d-flex align-items-center justify-content-center pb-5">
           <img
             className="about-section-image"
             src="http://www.lilithphotography.com/photos/about/ShellySunflower"
