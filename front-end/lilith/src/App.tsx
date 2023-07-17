@@ -12,6 +12,7 @@ import { useState } from 'react';
 function App() {
 
   const [currentGallery, setCurrentGallery] = useState("");  
+  console.log(currentGallery);
 
   return (
     <>    

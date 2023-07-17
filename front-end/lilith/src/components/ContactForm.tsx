@@ -19,8 +19,7 @@ export const ContactForm = () => {
   };
 
   const onSubmit = (e: any) => {
-    e.preventDefault();
-    const option = e.target.elements;
+    e.preventDefault();    
     let contactObj = {
       name: contactName,
       email: contactEmail,

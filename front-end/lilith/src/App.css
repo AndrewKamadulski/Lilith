@@ -11,8 +11,6 @@
 }
 
 
-
-
 .homepage-hero {
   display: flex !important;
   justify-content: center !important;
@@ -54,6 +52,8 @@
 .gallery .pics:hover {
   filter: opacity(0.8);
 }
+
+
 
 
 .connect {

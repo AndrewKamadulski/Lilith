@@ -1,12 +1,11 @@
-
 export const About = () => {
   return (
     <>
       <div className="about-container p-4">
         <div className="col-12 col-lg-6 d-flex m-1">
-          <p className="fs-4 m-1 pb-5 text-center">            
-            I am <span className="fs-1">Shelly Kamadulski</span>, owner of Lilith
-            Photography <br></br>
+          <p className="fs-4 m-1 pb-5 text-center">
+            I am <span className="fs-1">Shelly Kamadulski</span>, owner of
+            Lilith Photography <br></br>
             <br></br>
             &emsp;My love for photography began when my daughter was born in
             1993 because I wanted to preserve every moment of her little life.
@@ -23,7 +22,7 @@ export const About = () => {
           <img
             className="about-section-image"
             src="http://www.lilithphotography.com/photos/about/ShellySunflower"
-            style={{ width: 400, height: 400 }}
+            style={{ width: 300, height: 400 }}
             alt="Portrait of Shelly"
           />
         </div>
