@@ -11,7 +11,7 @@ export const Landing = () => {
       } else {
         setCurrentPhoto(currentPhoto + 1);
       }
-    }, 4000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [currentPhoto]);
 

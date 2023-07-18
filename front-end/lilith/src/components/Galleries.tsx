@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+
 import { photoGalleries } from "../utils/PhotoGalleries";
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,7 @@ export const Galleries: React.FC<{
   currentGallery: any;
   setCurrentGallery: any;
 }> = (props) => {
-  const { currentGallery, setCurrentGallery } = props;
+  const { setCurrentGallery } = props;
 
   let galleryList = [...Object.keys(photoGalleries)];
 
@@ -18,10 +18,9 @@ export const Galleries: React.FC<{
       </div>
 
       {/* Desktop */}
-      <div className="d-none d-lg-block">
+      <div className="d-none d-lg-block p-2">
         <div className="gallery">
           {galleryList.map((gallery) => {
-            console.log(gallery);
             const bgImage = {
               backgroundImage: `url('http://www.lilithphotography.com/Gallery/${gallery}/1')`,
               display: "inline-block",

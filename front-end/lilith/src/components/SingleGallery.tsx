@@ -34,7 +34,7 @@ export const SingleGallery = () => {
         {galleryPhotoArray.map((image, index) => {
           return (
             <div
-              className="gallery-images pt-1"
+              className="gallery-images py-2"
               key={index}
               onClick={() => handleImageClick(image)}
             >
@@ -52,7 +52,7 @@ export const SingleGallery = () => {
         {galleryPhotoArray.map((image, index) => {
           return (
             <div
-              className="gallery-images pt-1"
+              className="gallery-images py-1"
               key={index}
               onClick={() => handleImageClick(image)}
             >
@@ -65,7 +65,7 @@ export const SingleGallery = () => {
 
       {/* Lightbox */}
 
-      
+
     </>
   );
 };

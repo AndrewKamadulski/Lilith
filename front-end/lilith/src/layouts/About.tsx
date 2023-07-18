@@ -7,8 +7,8 @@ export const About = () => {
             I am <span className="fs-1">Shelly Kamadulski</span>, owner of
             Lilith Photography <br></br>
             <br></br>
-            &emsp;My love for photography began when my daughter was born in
-            1993 because I wanted to preserve every moment of her little life.
+            &emsp;My love for photography began when my daughter was born 
+            because I wanted to preserve every moment of her little life.
             Since then, I've become a bit obsessed with photography. I purchased
             my first professional camera in 2010 while studying Art at SWIC and
             knew that I wanted to capture those little details for other
@@ -39,12 +39,12 @@ export const About = () => {
 
         <div className="col-12 col-lg-6 d-flex">
           <p className="fs-4 p-4 mt-5 text-center">
-            <span className="about-section-banner">I want to be there!</span>
-            <br></br>&emsp;My heart is in photographing relationships. The
+            <span className="about-section-banner">I want to be there!</span>           
+            <br></br><br></br>My heart is in photographing relationships. The
             relationship between a mother and child, the love of a husband and
             wife, and the bonds between the entire family. That look of beaming
             happiness while holding your newborn, <b>I want to be there.</b> The
-            exhilaration and joy when your baby is experiencing new milestones,{" "}
+            exhilaration and joy when your baby is experiencing new milestones,<br></br>
             <b>I want to be there.</b> As your children grow and explore the
             world,
             <b> I want to be there</b> to capture those remarkable moments with
