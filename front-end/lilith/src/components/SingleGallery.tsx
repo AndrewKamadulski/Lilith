@@ -1,10 +1,16 @@
 import { useParams } from "react-router-dom";
 import { photoGalleries } from "../utils/PhotoGalleries";
 import { useState } from "react";
+import { Lightbox } from "./Lightbox";
 
 export const SingleGallery = () => {  
 
   const [lightBoxImage, setLightBoxImage] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const showLightbox = () => {
+    setIsOpen(true);
+  };
 
   let {currentGallery} = useParams(); 
   let index: number;  
@@ -22,7 +28,8 @@ export const SingleGallery = () => {
   }
 
   const handleImageClick = (image:string) => {
-      setLightBoxImage(image);      
+      setLightBoxImage(image); 
+      showLightbox();   
   }
 
   return (
@@ -64,8 +71,7 @@ export const SingleGallery = () => {
       </div>
 
       {/* Lightbox */}
-
-
+        <Lightbox isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
   );
 };

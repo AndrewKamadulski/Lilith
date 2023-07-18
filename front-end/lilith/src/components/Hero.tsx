@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-bootstrap/Modal";
 import { validateEmail } from "../utils/validateEmail";
 import { Link } from "react-router-dom";
