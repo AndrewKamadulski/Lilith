@@ -83,9 +83,9 @@ export const Hero = () => {
       </div>
 
       <div className="col-12">
-        <p className="mt-5">
+        <div className="mt-5">
           <hr></hr>
-        </p>
+        </div>
       </div>
       <div className="col-12 m-1 d-flex align-items-center justify-content-center">
         <div className="d-none d-lg-block col-lg-3 mx-3">
@@ -111,7 +111,7 @@ export const Hero = () => {
         </div>
       </div>
       <div className="col-12 d-flex m-1">
-        <p className="fs-4 mt-5 p-5 text-center">
+        <div className="fs-4 mt-5 p-5 text-center">
           <span className="display-2">Art you can enjoy every day!</span>
           <br></br>
           <hr className="p-3"></hr>I would love the chance to meet your family and make some art
@@ -132,7 +132,7 @@ export const Hero = () => {
             </Link>            
           </div>
           <hr className="mt-5"></hr>
-        </p>
+        </div>
       </div>
     </>
   );

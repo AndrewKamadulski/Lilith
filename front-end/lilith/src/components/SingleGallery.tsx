@@ -71,7 +71,7 @@ export const SingleGallery = () => {
       </div>
 
       {/* Lightbox */}
-        <Lightbox isOpen={isOpen} setIsOpen={setIsOpen}/>
+        <Lightbox isOpen={isOpen} setIsOpen={setIsOpen} lightBoxImage={lightBoxImage} setLightBoxImage={setLightBoxImage} index={index}/>
     </>
   );
 };

@@ -32,7 +32,7 @@ export const Landing = () => {
           <div>
             <Link
               to={"/Home"}
-              className="mb-5  btn btn-lg active position-absolute bottom-0 btn-outline-light"
+              className="mb-5 btn enter-btn active position-absolute bottom-0 btn-outline-light"
             >
               Enter
             </Link>
