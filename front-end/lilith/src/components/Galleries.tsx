@@ -3,8 +3,8 @@ import { photoGalleries } from "../utils/PhotoGalleries";
 import { Link } from "react-router-dom";
 
 export const Galleries: React.FC<{
-  currentGallery: any;
-  setCurrentGallery: any;
+  currentGallery: string;
+  setCurrentGallery: React.Dispatch<React.SetStateAction<string>>;
 }> = (props) => {
   const { setCurrentGallery } = props;
 
@@ -68,10 +68,10 @@ export const Galleries: React.FC<{
           return (
             <Link className="cursive" to={`/Galleries/${gallery}`}>
               <div
-                onClick={setCurrentGallery(gallery)}
+                onClick={()=>setCurrentGallery(gallery)}
                 className="gallery gallery-pics"
                 style={Object.assign(bgImage)}
-                key={gallery}
+                key={`${gallery} + "1"`}
               >
                 <p>{gallery}</p>
               </div>
