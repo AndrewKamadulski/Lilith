@@ -16,7 +16,7 @@ export const Landing = () => {
   }, [currentPhoto]);
 
   const bgImageStyle = {
-    backgroundImage: `url('https://www.lilithphotography.com/photos/main/${currentPhoto}')`,
+    backgroundImage: `url('/photos/main/${currentPhoto}')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100vh",

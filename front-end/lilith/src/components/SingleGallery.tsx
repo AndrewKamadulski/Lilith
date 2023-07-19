@@ -23,7 +23,7 @@ export const SingleGallery = () => {
 
   let galleryPhotoArray = [];
   for (let i = 1; i <= index ; i++) {
-    let image = `http://www.lilithphotography.com/Gallery/${currentGallery}/${i}`;
+    let image = `/Gallery/${currentGallery}/${i}`;
     galleryPhotoArray.push(image);
   }
 

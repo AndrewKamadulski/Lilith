@@ -22,7 +22,7 @@ export const Galleries: React.FC<{
         <div className="gallery">
           {galleryList.map((gallery) => {
             const bgImage = {
-              backgroundImage: `url('http://www.lilithphotography.com/Gallery/${gallery}/1')`,
+              backgroundImage: `url('/Gallery/${gallery}/1')`,
               display: "inline-block",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -54,7 +54,7 @@ export const Galleries: React.FC<{
       <div className="d-lg-none">
         {galleryList.map((gallery) => {
           const bgImage = {
-            backgroundImage: `url('http://www.lilithphotography.com/Gallery/${gallery}/1')`,
+            backgroundImage: `url('/Gallery/${gallery}/1')`,
             display: "inline-block",
             backgroundSize: "cover",
             backgroundPosition: "center",

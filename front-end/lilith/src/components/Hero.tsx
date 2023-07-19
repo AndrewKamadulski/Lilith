@@ -91,21 +91,21 @@ export const Hero = () => {
         <div className="d-none d-lg-block col-lg-3 mx-3">
           <img
             className="about-section-image"
-            src="http://www.lilithphotography.com/photos/about/Clouds"
+            src="/photos/about/Clouds"
             alt=""
           />
         </div>
         <div className="col-12 col-lg-3 mx-3">
           <img
             className="about-section-image"
-            src="http://www.lilithphotography.com/photos/about/Frog"
+            src="/photos/about/Frog"
             alt=""
           />
         </div>
         <div className="d-none d-lg-block col-3 mx-3">
           <img
             className="about-section-image"
-            src="http://www.lilithphotography.com/photos/about/Hands"
+            src="/photos/about/Hands"
             alt=""
           />
         </div>
