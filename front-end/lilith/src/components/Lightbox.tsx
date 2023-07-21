@@ -15,23 +15,25 @@ export const Lightbox: React.FC<{
 
   const imgFwd = () => {
     const id = lightBoxImage.split("/");
-    id[5] = (parseInt(id[5]) + 1).toString();
+    console.log(id)
+    id[3] = (parseInt(id[3]) + 1).toString();
 
     // reset gallery once end is reached
-    if (parseInt(id[5]) === index) {
-      id[5] = "1";
+    if (parseInt(id[3]) === index) {
+      id[3] = "1";
     }
     const url = id.join("/");
+    console.log(url)
     setLightBoxImage(url);
   };
 
   const imgBack = () => {
     const id = lightBoxImage.split("/");
-    id[5] = (parseInt(id[5]) - 1).toString();
+    id[3] = (parseInt(id[3]) - 1).toString();
 
     // reset gallery once beginning is reached
-    if (parseInt(id[5]) === 0) {
-      id[5] = (index - 1).toString();
+    if (parseInt(id[3]) === 0) {
+      id[3] = (index - 1).toString();
     }
     const url = id.join("/");
     setLightBoxImage(url);
