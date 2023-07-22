@@ -30,12 +30,12 @@ export const ContactForm = () => {
       option: contactOption,
       message: messageText,
     };
-    console.log(contactFormData);
-    // postData("../../send_mail", contactFormData).then((data) => {
-    //   console.log(data);
-    // });
+    
+    postData("../../send_mail", contactFormData).then((data) => {
+      console.log(data);
+    });
     setIsContactFormSent(true);
-    console.log(isContactFormSent);
+   
   };
 
 if(!isContactFormSent) {

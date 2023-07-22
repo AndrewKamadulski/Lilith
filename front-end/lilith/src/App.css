@@ -159,9 +159,13 @@ width: 300px;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .enter-btn {  
     left:35%;
+  }
+
+  .gallery p {
+    font-size: 1em;
   }
 
   .lightbox-close-btn {

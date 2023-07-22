@@ -11,5 +11,6 @@ export async function postData(url = '', data = {}) {
     referrerPolicy: 'no-referrer', 
     body: JSON.stringify(data) 
 });
+    console.log(response.json());
     return response; 
 }

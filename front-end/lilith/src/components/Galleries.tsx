@@ -15,10 +15,8 @@ export const Galleries: React.FC<{
       <div className="display-2">
         Galleries
         <hr></hr>
-      </div>
-
-      {/* Desktop */}
-      <div className="d-none d-lg-block p-2">
+      </div>  
+      <div className="p-2">
         <div className="gallery">
           {galleryList.map((gallery) => {
             const bgImage = {
@@ -34,12 +32,11 @@ export const Galleries: React.FC<{
             };
 
             return (
-              <Link className="cursive" to={`/Galleries/${gallery}`}>
+              <Link className="cursive" to={`/Galleries/${gallery}`} key={gallery}>
                 <div
                   onClick={() => setCurrentGallery(gallery)}
-                  className="gallery gallery-pics"
-                  style={Object.assign(bgImage)}
-                  key={gallery}
+                  className="gallery-pics"
+                  style={Object.assign(bgImage)}                  
                 >
                   <p>{gallery}</p>
                 </div>
@@ -47,37 +44,6 @@ export const Galleries: React.FC<{
             );
           })}
         </div>
-      </div>
-
-      {/* Mobile */}
-
-      <div className="d-lg-none">
-        {galleryList.map((gallery) => {
-          const bgImage = {
-            backgroundImage: `url('/Gallery/${gallery}/1')`,
-            display: "inline-block",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            color: "white",
-            margin: "5px",
-            padding: "0 5px",
-            height: "250px",
-            width: "400px",
-          };
-
-          return (
-            <Link className="cursive" to={`/Galleries/${gallery}`}>
-              <div
-                onClick={()=>setCurrentGallery(gallery)}
-                className="gallery gallery-pics"
-                style={Object.assign(bgImage)}
-                key={`${gallery} + "1"`}
-              >
-                <p>{gallery}</p>
-              </div>
-            </Link>
-          );
-        })}
       </div>
     </>
   );

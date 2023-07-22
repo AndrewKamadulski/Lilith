@@ -27,9 +27,9 @@ export const Hero = () => {
         message: "Email List Signup",
       };
 
-      postData("../../send_mail", heroFormData).then((data) => {
-        console.log(data);
-      });
+      // postData("../../send_mail", heroFormData).then((data) => {
+      //   console.log(data);
+      // });
 
       setIsUserSignedUp(true);
       hideModal();
@@ -71,6 +71,7 @@ export const Hero = () => {
                   id="emailListSignupName"
                   placeholder="name"
                   onChange={(e) => setUserName(e.target.value)}
+                  required
                 ></input>
               </div>
               <div>
