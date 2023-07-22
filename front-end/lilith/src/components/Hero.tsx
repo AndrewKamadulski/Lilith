@@ -31,7 +31,7 @@ export const Hero = () => {
         }
 
         postData("../../send_mail", heroFormData).then((data) => {
-          console.log(data);
+          setIsUserSignedUp(true);
         });
 
       hideModal();
@@ -43,7 +43,8 @@ export const Hero = () => {
   return (
     <>
       <div className="w-100 homepage-hero" style={{ height: 550 }}>
-        <div className="d-flex flex-column align-items-center">
+  
+        <div className={`d-flex flex-column align-items-center ${!isUserSignedUp ? "d-none" : ""}`}>
           <span className="display-1">Subscribe!</span>
           <br></br>
           <p className="mt-2 hero-text">
@@ -59,6 +60,16 @@ export const Hero = () => {
             </button>
           </div>
         </div>
+
+
+        <div className={`d-flex flex-column align-items-center ${isUserSignedUp ? "d-none" : ""}`}>
+          <span className="display-4">Thanks For Signing Up!</span>
+          <br></br>
+          <p className="mt-2 hero-text">
+            Watch your email for special announcements and deals.
+          </p>     
+        </div>
+
 
         <Modal show={isOpen} onHide={hideModal}>
           <Modal.Body>
