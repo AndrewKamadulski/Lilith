@@ -7,6 +7,9 @@ export const ContactForm = () => {
   const [contactPhone, setContactPhone] = useState("");
   const [messageText, setMessageText] = useState("");
   const [contactOption, setContactOption] = useState("Other");
+  const [isContactFormSent, setIsContactFormSent] = useState(false);
+
+  console.log(isContactFormSent);
 
   const handleText = (e: any) => {
     setMessageText(e.target.value);
@@ -16,12 +19,6 @@ export const ContactForm = () => {
     setContactOption(e.target.value);
   };
 
-  const clearInputs = () => {
-    setMessageText("Message Sent!");
-    setContactName("");
-    setContactEmail("");
-    setContactPhone("");    
-  };
 
   const onSubmit = (e: any) => {
     e.preventDefault();
@@ -34,13 +31,14 @@ export const ContactForm = () => {
       message: messageText,
     };
     console.log(contactFormData);
-    postData("../../send_mail", contactFormData).then((data) => {
-      console.log(data);
-    });
-
-    clearInputs();
+    // postData("../../send_mail", contactFormData).then((data) => {
+    //   console.log(data);
+    // });
+    setIsContactFormSent(true);
+    console.log(isContactFormSent);
   };
 
+if(!isContactFormSent) {
   return (
     <>
       <div className="container contact-form mt-3 col-12 col-lg-6">
@@ -197,4 +195,19 @@ export const ContactForm = () => {
       </div>
     </>
   );
+  } else {
+    return (
+      <div className="container contact-form mt-3 col-12 col-lg-6"> 
+      <div className="text-center pt-5">  
+      <p  className="display-3 pt-5"> Thank you for your interest. </p><br></br>
+      <p className="display-4">I will be in touch soon.</p>
+      </div>  
+      </div>
+        
+     
+
+      
+      
+    );
+  }
 };

@@ -12,7 +12,6 @@ import { useState } from 'react';
 function App() {
 
   const [currentGallery, setCurrentGallery] = useState("");  
- 
   return (
     <>    
     <Router> 
@@ -45,7 +44,7 @@ function App() {
             />     
              <Route
               path="*"
-               element={<Home />}
+              element={<Home />}
             />
             
 

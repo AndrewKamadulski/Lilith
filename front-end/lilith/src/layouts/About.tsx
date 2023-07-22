@@ -38,20 +38,21 @@ export const About = () => {
         </div>
 
         <div className="col-12 col-lg-6 d-flex">
-          <p className="fs-4 p-4 mt-5 text-center">
+          <div className="fs-4 p-4 mt-5 text-center">
             <span className="about-section-banner">I want to be there!</span>
             <br></br>
-            <br></br>My heart is in photographing relationships. The
+            <p className="mt-3">My heart is in photographing relationships. The
             relationship between a mother and child, the love of a husband and
             wife, and the bonds between the entire family. That look of beaming
             happiness while holding your newborn, <b>I want to be there.</b> The
-            exhilaration and joy when your baby is experiencing new milestones,
-            <br></br>
-            <b>I want to be there.</b> As your children grow and explore the
+            exhilaration and joy when your baby is experiencing new milestones, 
+            <b> I want to be there.</b> As your children grow and explore the
             world,
             <b> I want to be there</b> to capture those remarkable moments with
             you!
-          </p>
+            </p>
+          </div>
+          
         </div>
       </div>
     </>

@@ -29,11 +29,16 @@
   );
   opacity: var(--mainOpacity);
   height: 25em !important;
+  width: 100%;
 }
 
 .hero-text {
   font-size: 2rem;
   margin: 0 2em;
+}
+
+#emailListSignup, #emailListSignupName {
+width: 300px;
 }
 
 .gallery {
@@ -102,7 +107,7 @@
 }
 
 .about-section-banner {
-  font-size: 2em;
+  font-size: 3em;
   margin-top: 40px;
 }
 
