@@ -58,13 +58,13 @@ app.post('/send_mail', (req,res) => {
     });
   
     let sendMessage = {
-        from: `${email}`,
+        from: "shellyk@lilithphotography.com",
         to: "shellyk@lilithphotography.com, lilithphotography34@gmail.com, andrew.kamadulski@gmail.com",
         subject: "New Message Request from LilithPhotography.com",
         html: `
         <hr />        
         <span>Name: ${name}</span><br/>
-        <span>Email: ${email}</span><br/>
+        <span>Email: "${email}"</span><br/>
         <span>Phone: ${phone || "No phone"}</span><br/><br/>
         <span>Type of Session: ${option || "No selection"}</span><br/>
         <span>Message:</span><br/>
