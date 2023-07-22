@@ -9,11 +9,7 @@ export const ContactForm = () => {
   const [contactOption, setContactOption] = useState("Other");
   const [isContactFormSent, setIsContactFormSent] = useState(false);
 
-  console.log(isContactFormSent);
-
-  const handleText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setMessageText(e.target.value);
-  };
+  console.log(isContactFormSent); 
 
   const onOptionChange = (e: React.FormEvent<HTMLInputElement>) => {
     setContactOption(e.currentTarget.value);
@@ -174,7 +170,7 @@ if(!isContactFormSent) {
               </label>
               <textarea
                 value={messageText}
-                onChange={handleText}
+                onChange={(e) => setMessageText(e.target.value)}
                 className="form-control"
                 id="message"
               >
