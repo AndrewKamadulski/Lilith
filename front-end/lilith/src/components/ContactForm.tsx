@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, FormEvent, SyntheticEvent, useState } from "react";
 import { postData } from "../utils/PostData";
 
 export const ContactForm = () => {
@@ -11,16 +11,16 @@ export const ContactForm = () => {
 
   console.log(isContactFormSent);
 
-  const handleText = (e: any) => {
+  const handleText = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessageText(e.target.value);
   };
 
-  const onOptionChange = (e: any) => {
-    setContactOption(e.target.value);
+  const onOptionChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setContactOption(e.currentTarget.value);
   };
 
 
-  const onSubmit = (e: any) => {
+  const onSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
 
     let contactFormData = {
@@ -31,9 +31,9 @@ export const ContactForm = () => {
       message: messageText,
     };
     
-    postData("../../send_mail", contactFormData).then((data) => {
-      console.log(data);
-    });
+    // postData("../../send_mail", contactFormData).then((data) => {
+    //   console.log(data);
+    // });
     setIsContactFormSent(true);
    
   };

@@ -3,7 +3,7 @@
 }
 
 .main-color {
-  background-color: #aaa9ad;
+  background-color: #e9edee;
 }
 
 .cursive {
@@ -24,8 +24,8 @@
   justify-content: center !important;
   align-items: center !important;
   background-image: linear-gradient(
-    rgba(213, 223, 223, 0.7),
-    rgba(222, 237, 237, 0.7)
+    rgba(173, 180, 180, 0.7),
+    rgba(202, 217, 217, 0.7)
   );
   opacity: var(--mainOpacity);
   height: 25em !important;
@@ -74,8 +74,8 @@ width: 300px;
 }
 
 .contact-form {
-  height: 80vh;
-  background-color: #e7e7e7;
+  height: 100vh;
+  background-color: #f2f8f8;
   opacity: 0.8;
 }
 
@@ -107,7 +107,7 @@ width: 300px;
 }
 
 .about-section-banner {
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 40px;
 }
 
@@ -159,7 +159,7 @@ width: 300px;
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .enter-btn {  
     left:35%;
   }
