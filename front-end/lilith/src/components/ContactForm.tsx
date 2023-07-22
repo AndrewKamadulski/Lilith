@@ -20,21 +20,21 @@ export const ContactForm = () => {
     setMessageText("Message Sent!");
     setContactName("");
     setContactEmail("");
-    setContactPhone("");
+    setContactPhone("");    
   };
 
   const onSubmit = (e: any) => {
     e.preventDefault();
 
-    let contactObj = {
+    let contactFormData = {
       name: contactName,
       email: contactEmail,
       phone: contactPhone,
       option: contactOption,
       message: messageText,
     };
-    console.log(contactObj);
-    postData("../../send_mail", contactObj).then((data) => {
+    console.log(contactFormData);
+    postData("../../send_mail", contactFormData).then((data) => {
       console.log(data);
     });
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { validateEmail } from "../utils/validateEmail";
 import { Link } from "react-router-dom";
+import { postData } from "../utils/PostData";
 
 export const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,22 @@ export const Hero = () => {
     setIsOpen(false);
   };
 
+  
+
   const handleEmailSignUp = () => {
-    if (validateEmail(userEmail)) {
-      console.log("email sent");
+    console.log(validateEmail(userEmail));
+      if (validateEmail(userEmail)) {
+
+        let heroFormData = {
+          name: userName,
+          email: userEmail,
+          message: "Email List Signup"
+        }
+
+        postData("../../send_mail", heroFormData).then((data) => {
+          console.log(data);
+        });
+
       hideModal();
     } else {
       console.log("invalid email");
@@ -71,7 +85,7 @@ export const Hero = () => {
                 id="emailListSignup"
                 placeholder="user@email.com"
                 style={{ width: 300 }}
-                onChange={(e) => setUserName(e.target.value)}
+                onChange={(e) => setUserEmail(e.target.value)}
               ></input>
             </div>
           </Modal.Body>
