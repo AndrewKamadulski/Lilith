@@ -71,12 +71,18 @@ width: 300px;
 }
 .contact-container {
   background-image: url(./images/girl-and-horse.jpg);
+  opacity: 0.6;
 }
 
 .contact-form {
   height: 100vh;
   background-color: #f2f8f8;
-  opacity: 0.8;
+  opacity: 0.5;
+  
+}
+
+.contact-form:hover { 
+  opacity: 0.9;  
 }
 
 .contact-label {
@@ -180,8 +186,11 @@ width: 300px;
   
   .contact-form {
     height: 110vh;
+    opacity: 0.7;
   }
-  
-  
 
+  
+  .contact-container {
+    opacity: 1;
+  }
 }
