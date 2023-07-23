@@ -1,16 +1,19 @@
 export const photoGalleries: { [key: string]: number } = {
-  Newborn: 21,
+  Newborn: 35,
   Children: 28,
   Family: 21,
-  Maternity: 9,
-  Senior: 22,
-  Couples: 10,
-  Santa: 18,
-  Sunflowers: 13,
+  Maternity: 25,
+  Cakesmash: 23,
+  Fairyland: 22,
+  Mermaid: 25,
+  Santa: 27,
+  Beach: 25,
+  Sunflowers: 19,
   Christmas: 14,
-  Cakesmash: 12,
-  PurpleClover: 10,
-  Beach: 11,
+  AllStars: 17,
+  Senior: 22,
+  PurpleClover: 21,
+  Couples: 9,
 };
 
 // Photo galleries is an object containing a list of the galleries to
