@@ -27,9 +27,9 @@ export const ContactForm = () => {
       message: messageText,
     };
     
-    // postData("../../send_mail", contactFormData).then((data) => {
-    //   console.log(data);
-    // });
+    postData("../../send_mail", contactFormData).then((data) => {
+      console.log(data);
+    });
     setIsContactFormSent(true);
    
   };

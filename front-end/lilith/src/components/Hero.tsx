@@ -27,9 +27,9 @@ export const Hero = () => {
         message: "Email List Signup",
       };
 
-      // postData("../../send_mail", heroFormData).then((data) => {
-      //   console.log(data);
-      // });
+      postData("../../send_mail", heroFormData).then((data) => {
+        console.log(data);
+      });
 
       setIsUserSignedUp(true);
       hideModal();
