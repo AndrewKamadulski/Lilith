@@ -10,7 +10,6 @@ export async function postData(url = '', data = {}) {
     redirect: 'follow',
     referrerPolicy: 'no-referrer', 
     body: JSON.stringify(data) 
-});
-    console.log(response.json());
+});   
     return response; 
 }

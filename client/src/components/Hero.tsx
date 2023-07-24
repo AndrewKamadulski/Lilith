@@ -8,7 +8,7 @@ export const Hero = () => {
   const [userEmail, setUserEmail] = useState("");
   const [userName, setUserName] = useState("");
   const [isUserSignedUp, setIsUserSignedUp] = useState(false);
-  console.log(isUserSignedUp);
+  const [emailSignupError, setEmailSignupError] = useState(false);
 
   const showModal = () => {
     setIsOpen(true);
@@ -19,7 +19,6 @@ export const Hero = () => {
   };
 
   const handleEmailSignUp = () => {
-    console.log(validateEmail(userEmail));
     if (validateEmail(userEmail)) {
       let heroFormData = {
         name: userName,
@@ -27,9 +26,16 @@ export const Hero = () => {
         message: "Email List Signup",
       };
 
-      postData("../../send_mail", heroFormData).then((data) => {
-        console.log(data);
-      });
+      try {
+        postData("../../send_mail", heroFormData).then((data) => {
+          if (!data.ok) {
+            console.log("Unable to send data");
+            setEmailSignupError(true);
+          }
+        });
+      } catch (error) {
+        console.log(error);
+      }
 
       setIsUserSignedUp(true);
       hideModal();
@@ -97,15 +103,30 @@ export const Hero = () => {
     );
   } else {
     return (
-      <div className="homepage-hero">
-        <div className="d-flex flex-column align-items-center ">
-          <span className="display-3">Thanks for Signing Up!</span>
-          <br></br>
-          <p className="mt-2 hero-text text-center">
-            Watch for announcements and special deals
-          </p>
-        </div>
-      </div>
+      <>
+        {!emailSignupError && (
+          <div className="homepage-hero">
+            <div className="d-flex flex-column align-items-center ">
+              <span className="display-3">Thanks for Signing Up!</span>
+              <br></br>
+              <p className="mt-2 hero-text text-center">
+                Watch for announcements and special deals
+              </p>
+            </div>
+          </div>
+        )}
+        {emailSignupError && (
+          <div className="homepage-hero">
+            <div className="d-flex flex-column align-items-center ">
+              <span className="display-3">Something Went Wrong!</span>
+              <br></br>
+              <p className="mt-2 hero-text text-center">
+                We are having technical difficulties. Please try again later.
+              </p>
+            </div>
+          </div>
+        )}
+      </>
     );
   }
 };
