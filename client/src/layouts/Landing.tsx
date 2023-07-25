@@ -6,7 +6,7 @@ export const Landing = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (currentPhoto === 5) {
+      if (currentPhoto === 10) {
         setCurrentPhoto(1);
       } else {
         setCurrentPhoto(currentPhoto + 1);
@@ -28,12 +28,11 @@ export const Landing = () => {
   return (
     <>
       <div style={bgImageStyle}>
-        <div className="d-flex mt-3 justify-content-center align-items-center">
+        <div className="d-flex justify-content-center align-items-center">
           <div>
             <Link
               to={"/Home"}
-              className="mb-5 btn enter-btn active position-absolute bottom-0 btn-outline-light"
-            >
+              className="btn enter-btn active position-absolute bottom-0 btn-outline-light"            >
               Enter
             </Link>
           </div>

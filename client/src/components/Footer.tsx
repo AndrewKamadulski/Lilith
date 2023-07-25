@@ -3,7 +3,7 @@ import { SocialMedia } from "./SocialMedia";
 
 export const Footer = () => {
   return (
-    <div className="main-color mt-3 text-muted">
+    <div className="main-color text-muted">
       <footer className="container d-flex flex-wrap justify-content-between py-5 main-color">
         <div className="col-4">
           <p className="col-md-6 mb-0 fs-5">© Lilith Photography</p>

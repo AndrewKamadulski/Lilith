@@ -138,11 +138,10 @@
 .lightbox-left-btn {
   position: absolute;
   bottom: 50%;
-  left: 0%;
+  left: 1%;
   height: 2em;
   width: 2em;
   font-size: 2em;
-  padding-left: 20px;
 }
 
 .lightbox-right-btn {
