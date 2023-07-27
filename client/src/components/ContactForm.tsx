@@ -42,7 +42,7 @@ export const ContactForm = () => {
   if (!isContactFormSent) {
     return (
       <>
-        <div className="container contact-form mt-3 col-12 col-lg-6">
+        <div className="container contact-form col-12 col-lg-6">
           <div className="justify-content-center pt-5">
             <form onSubmit={onSubmit}>
               <div className="mb-3 px-5">
@@ -200,7 +200,7 @@ export const ContactForm = () => {
     return (
       <>
         {!contactFormError && (
-          <div className="container contact-form mt-3 col-12 col-lg-6">
+          <div className="container contact-form col-12 col-lg-6">
             <div className="text-center pt-5">
               <p className="display-3 pt-5"> Thank you for your interest. </p>
               <br></br>
@@ -210,7 +210,7 @@ export const ContactForm = () => {
         )}
 
         {contactFormError && (
-          <div className="container contact-form mt-3 col-12 col-lg-6">
+          <div className="container contact-form col-12 col-lg-6">
             <div className="text-center pt-5">
               <p className="display-3 pt-5"> Something went wrong. </p>
               <br></br>

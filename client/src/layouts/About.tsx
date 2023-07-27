@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <>
       <div className="about-container p-4">
-        <div className="col-12 col-lg-6 d-flex m-1">
+        <div className="col-12 col-lg-6 d-flex m-1 order-1">
           <p className="fs-4 m-1 pb-5 text-center">
             I am <span className="fs-1">Shelly Kamadulski</span>, owner of
             Lilith Photography <br></br>
@@ -18,7 +18,7 @@ export const About = () => {
             your family.
           </p>
         </div>
-        <div className="col-12 col-lg-5 d-flex align-items-center justify-content-center pb-5">
+        <div className="col-12 col-lg-5 d-flex align-items-center justify-content-center pb-5 order-lg-2 order-first">
           <img
             className="about-section-image"
             src="/photos/about/ShellySunflower"
@@ -26,10 +26,10 @@ export const About = () => {
             alt="Portrait of Shelly"
           />
         </div>
-        <div className="col-12">
+        <div className="col-12 order-3">
           <hr></hr>
         </div>
-        <div className="col-12 col-lg-5 d-flex m-3">
+        <div className="col-12 col-lg-5 d-flex m-3 order-4">
           <img
             className="about-section-image"
             src="/photos/about/Family"
@@ -37,7 +37,7 @@ export const About = () => {
           />
         </div>
 
-        <div className="col-12 col-lg-6 d-flex">
+        <div className="col-12 col-lg-6 d-flex order-5">
           <div className="fs-4 p-4 mt-5 text-center">
             <span className="about-section-banner">I want to be there!</span>
             <br></br>

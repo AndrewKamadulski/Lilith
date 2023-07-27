@@ -6,7 +6,7 @@ export const photoGalleries: { [key: string]: number } = {
   Cakesmash: 23,
   Fairyland: 22,
   Mermaid: 25,
-  Santa: 27,
+  Santa: 26,
   Beach: 25,
   Sunflowers: 19,
   Christmas: 14,

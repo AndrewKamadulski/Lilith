@@ -20,7 +20,7 @@ export const Landing = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100vh",
-    width: "100vw",
+    width: "99vw",
     zIndex: "-1",
     backgroundRepeat: "no-repeat",
   };
