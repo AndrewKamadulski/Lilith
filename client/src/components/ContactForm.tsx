@@ -205,6 +205,8 @@ export const ContactForm = () => {
               <p className="display-3 pt-5"> Thank you for your interest. </p>
               <br></br>
               <p className="display-4">I will be in touch soon.</p>
+              <br></br>
+              <p className="display-4">Please check your spam folder for a response.</p>
             </div>
           </div>
         )}
